@@ -135,6 +135,15 @@ let options = getPasswordOptions();
 }
 
 var result = [];
+var possibleCharacters = [];
+var guaranteedCharacters = [];
+of (!options) return null;
+if (options.hasSpecialCharacters) {
+  possibleCharacters.concat(specialCharacters);
+  guaranteedCharacters.push(getRandom(specialCharacters));
+}
+
+
 
 // Get references to the #generate element
 const generateBtn = document.querySelector('#generate');
