@@ -133,6 +133,11 @@ const upperCasedCharacters = [
 // Function to prompt user for password options
 function getPasswordOptions() {
 let passwordLength = prompt("How long would you like your password to be? (Between 8 and 128 characters)")
+
+let includeLower = confirm("Do you want to include lowercase characters?")
+let includeUpper = confirm("Do you want to include uppercase characters?")
+let includeSpecial = confirm("Do you want to include special characters?")
+let includeNumeric = confirm("Do you want to include numeric characters?")
 }
 
 // Function for getting a random element from an array
