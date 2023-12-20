@@ -1,6 +1,6 @@
 // Array of special characters to be included in password
-const charOptions = [];
-const generatedPassword = '';
+//const charOptions = [specialCharacters, numericCharacters, lowerCasedCharacters, upperCasedCharacters];
+//const generatedPassword = '';
 // You can store the generatedPassword as a string and concat each character OR
 // as an array and push each character, then join once you have enough characters
 
@@ -132,7 +132,7 @@ const upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-
+let passwordLength = prompt("How long would you like your password to be? (Between 8 and 128 characters)")
 }
 
 // Function for getting a random element from an array
@@ -142,7 +142,7 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
-
+getPasswordOptions()
 }
 
 // Get references to the #generate element
